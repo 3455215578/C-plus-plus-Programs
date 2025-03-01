@@ -20,11 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\变量.cpp" />
-    <ClCompile Include="Src\引用.cpp" />
-    <ClCompile Include="Src\指针.cpp" />
-    <ClCompile Include="Src\条件.cpp" />
-    <ClCompile Include="Src\for.cpp" />
-    <ClCompile Include="Src\while.cpp" />
+    <ClCompile Include="Src\指针和引用\引用.cpp" />
+    <ClCompile Include="Src\指针和引用\指针.cpp" />
+    <ClCompile Include="Src\条件\条件.cpp" />
+    <ClCompile Include="Src\循环和控制流\for.cpp" />
+    <ClCompile Include="Src\循环和控制流\while.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
