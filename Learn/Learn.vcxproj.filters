@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\循环与控制流">
+      <UniqueIdentifier>{d7513493-8ae3-4c85-b5c8-23bb2ff0d7af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\条件">
+      <UniqueIdentifier>{ecd15fec-9586-4a9e-9be5-9cf5e9475a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\指针和引用">
+      <UniqueIdentifier>{15c41dfa-d9ea-4788-bf05-e2514ec7215b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\变量.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\for.cpp">
+      <Filter>源文件\循环与控制流</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\while.cpp">
+      <Filter>源文件\循环与控制流</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\条件.cpp">
+      <Filter>源文件\条件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\指针.cpp">
+      <Filter>源文件\指针和引用</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\引用.cpp">
+      <Filter>源文件\指针和引用</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
