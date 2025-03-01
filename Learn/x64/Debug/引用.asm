@@ -109,13 +109,13 @@ __F57DF8F3_ios DB 01H
 __1D69971C_ostream DB 01H
 __7EB9A226_istream DB 01H
 __B5399AEE_iostream DB 01H
-__FFAB99BD_引用@cpp DB 01H
+__C7140A87_指针和引用\引用@cpp DB 01H
 msvcjmc	ENDS
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
 PUBLIC	?Increment_Address@@YAXPEAH@Z			; Increment_Address
 PUBLIC	?Increment_Reference@@YAXAEAH@Z			; Increment_Reference
-PUBLIC	main
+PUBLIC	?main06@@YAHXZ					; main06
 PUBLIC	??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z ; std::endl<char,std::char_traits<char> >
 PUBLIC	__JustMyCode_Default
 EXTRN	__imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z:PROC
@@ -159,9 +159,9 @@ $pdata$?Increment_Reference@@YAXAEAH@Z DD imagerel $LN3
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$main DD	imagerel $LN3
+$pdata$?main06@@YAHXZ DD imagerel $LN3
 	DD	imagerel $LN3+178
-	DD	imagerel $unwind$main
+	DD	imagerel $unwind$?main06@@YAHXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -191,7 +191,7 @@ _volmd	DB	02aH
 voltbl	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$main DD	025053119H
+$unwind$?main06@@YAHXZ DD 025053119H
 	DD	010a230fH
 	DD	070030025H
 	DD	05002H
@@ -200,16 +200,16 @@ $unwind$main DD	025053119H
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
-main$rtcName$0 DB 061H
+?main06@@YAHXZ$rtcName$0 DB 061H			; main06
 	DB	00H
 	ORG $+14
-main$rtcVarDesc DD 024H
+?main06@@YAHXZ$rtcVarDesc DD 024H			; main06
 	DD	04H
-	DQ	FLAT:main$rtcName$0
+	DQ	FLAT:?main06@@YAHXZ$rtcName$0
 	ORG $+48
-main$rtcFrameData DD 01H
+?main06@@YAHXZ$rtcFrameData DD 01H			; main06
 	DD	00H
-	DQ	FLAT:main$rtcVarDesc
+	DQ	FLAT:?main06@@YAHXZ$rtcVarDesc
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -287,13 +287,13 @@ $LN3:
 ??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z ENDP ; std::endl<char,std::char_traits<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT main
+;	COMDAT ?main06@@YAHXZ
 _TEXT	SEGMENT
 a$ = 4
 ref$ = 40
 __$ArrayPad$ = 248
-main	PROC						; COMDAT
-; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\引用.cpp
+?main06@@YAHXZ PROC					; main06, COMDAT
+; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\指针和引用\引用.cpp
 ; Line 18
 $LN3:
 	push	rbp
@@ -307,7 +307,7 @@ $LN3:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__FFAB99BD_引用@cpp
+	lea	rcx, OFFSET FLAT:__C7140A87_指针和引用\引用@cpp
 	call	__CheckForDebuggerJustMyCode
 ; Line 19
 	mov	DWORD PTR a$[rbp], 5
@@ -332,7 +332,7 @@ $LN3:
 ; Line 29
 	mov	edi, eax
 	lea	rcx, QWORD PTR [rbp-32]
-	lea	rdx, OFFSET FLAT:main$rtcFrameData
+	lea	rdx, OFFSET FLAT:?main06@@YAHXZ$rtcFrameData
 	call	_RTC_CheckStackVars
 	mov	eax, edi
 	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
@@ -342,14 +342,14 @@ $LN3:
 	pop	rdi
 	pop	rbp
 	ret	0
-main	ENDP
+?main06@@YAHXZ ENDP					; main06
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ?Increment_Reference@@YAXAEAH@Z
 _TEXT	SEGMENT
 value$ = 224
 ?Increment_Reference@@YAXAEAH@Z PROC			; Increment_Reference, COMDAT
-; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\引用.cpp
+; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\指针和引用\引用.cpp
 ; Line 13
 $LN3:
 	mov	QWORD PTR [rsp+8], rcx
@@ -357,7 +357,7 @@ $LN3:
 	push	rdi
 	sub	rsp, 232				; 000000e8H
 	lea	rbp, QWORD PTR [rsp+32]
-	lea	rcx, OFFSET FLAT:__FFAB99BD_引用@cpp
+	lea	rcx, OFFSET FLAT:__C7140A87_指针和引用\引用@cpp
 	call	__CheckForDebuggerJustMyCode
 ; Line 14
 	mov	rax, QWORD PTR value$[rbp]
@@ -377,7 +377,7 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 value$ = 224
 ?Increment_Address@@YAXPEAH@Z PROC			; Increment_Address, COMDAT
-; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\引用.cpp
+; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\指针和引用\引用.cpp
 ; Line 7
 $LN3:
 	mov	QWORD PTR [rsp+8], rcx
@@ -385,7 +385,7 @@ $LN3:
 	push	rdi
 	sub	rsp, 232				; 000000e8H
 	lea	rbp, QWORD PTR [rsp+32]
-	lea	rcx, OFFSET FLAT:__FFAB99BD_引用@cpp
+	lea	rcx, OFFSET FLAT:__C7140A87_指针和引用\引用@cpp
 	call	__CheckForDebuggerJustMyCode
 ; Line 8
 	mov	rax, QWORD PTR value$[rbp]
@@ -406,7 +406,7 @@ _TEXT	SEGMENT
 __formal$ = 224
 __formal$ = 232
 ?__empty_global_delete@@YAXPEAX_K@Z PROC		; __empty_global_delete, COMDAT
-; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\引用.cpp
+; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\指针和引用\引用.cpp
 ; Line 30
 $LN3:
 	mov	QWORD PTR [rsp+16], rdx
@@ -415,7 +415,7 @@ $LN3:
 	push	rdi
 	sub	rsp, 232				; 000000e8H
 	lea	rbp, QWORD PTR [rsp+32]
-	lea	rcx, OFFSET FLAT:__FFAB99BD_引用@cpp
+	lea	rcx, OFFSET FLAT:__C7140A87_指针和引用\引用@cpp
 	call	__CheckForDebuggerJustMyCode
 	lea	rsp, QWORD PTR [rbp+200]
 	pop	rdi
@@ -428,7 +428,7 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 __formal$ = 224
 ?__empty_global_delete@@YAXPEAX@Z PROC			; __empty_global_delete, COMDAT
-; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\引用.cpp
+; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\指针和引用\引用.cpp
 ; Line 30
 $LN3:
 	mov	QWORD PTR [rsp+8], rcx
@@ -436,7 +436,7 @@ $LN3:
 	push	rdi
 	sub	rsp, 232				; 000000e8H
 	lea	rbp, QWORD PTR [rsp+32]
-	lea	rcx, OFFSET FLAT:__FFAB99BD_引用@cpp
+	lea	rcx, OFFSET FLAT:__C7140A87_指针和引用\引用@cpp
 	call	__CheckForDebuggerJustMyCode
 	lea	rsp, QWORD PTR [rbp+200]
 	pop	rdi

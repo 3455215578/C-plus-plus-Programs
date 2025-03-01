@@ -25,6 +25,7 @@
     <ClCompile Include="Src\条件\条件.cpp" />
     <ClCompile Include="Src\循环和控制流\for.cpp" />
     <ClCompile Include="Src\循环和控制流\while.cpp" />
+    <ClCompile Include="Src\类和对象\类和对象.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

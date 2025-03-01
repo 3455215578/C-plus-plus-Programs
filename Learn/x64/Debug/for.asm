@@ -109,7 +109,7 @@ __F57DF8F3_ios DB 01H
 __1D69971C_ostream DB 01H
 __7EB9A226_istream DB 01H
 __B5399AEE_iostream DB 01H
-__C28EDDC9_for@cpp DB 01H
+__91828629_for@cpp DB 01H
 msvcjmc	ENDS
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
@@ -1192,14 +1192,14 @@ text$x	ENDS
 _TEXT	SEGMENT
 i$1 = 4
 ?main03@@YAHXZ PROC					; main03, COMDAT
-; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\for.cpp
+; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\循环和控制流\for.cpp
 ; Line 4
 $LN7:
 	push	rbp
 	push	rdi
 	sub	rsp, 264				; 00000108H
 	lea	rbp, QWORD PTR [rsp+32]
-	lea	rcx, OFFSET FLAT:__C28EDDC9_for@cpp
+	lea	rcx, OFFSET FLAT:__91828629_for@cpp
 	call	__CheckForDebuggerJustMyCode
 ; Line 59
 	mov	DWORD PTR i$1[rbp], 0
@@ -1328,7 +1328,7 @@ _TEXT	SEGMENT
 __formal$ = 224
 __formal$ = 232
 ?__empty_global_delete@@YAXPEAX_K@Z PROC		; __empty_global_delete, COMDAT
-; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\for.cpp
+; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\循环和控制流\for.cpp
 ; Line 69
 $LN3:
 	mov	QWORD PTR [rsp+16], rdx
@@ -1337,7 +1337,7 @@ $LN3:
 	push	rdi
 	sub	rsp, 232				; 000000e8H
 	lea	rbp, QWORD PTR [rsp+32]
-	lea	rcx, OFFSET FLAT:__C28EDDC9_for@cpp
+	lea	rcx, OFFSET FLAT:__91828629_for@cpp
 	call	__CheckForDebuggerJustMyCode
 	lea	rsp, QWORD PTR [rbp+200]
 	pop	rdi
@@ -1350,7 +1350,7 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 __formal$ = 224
 ?__empty_global_delete@@YAXPEAX@Z PROC			; __empty_global_delete, COMDAT
-; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\for.cpp
+; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\循环和控制流\for.cpp
 ; Line 69
 $LN3:
 	mov	QWORD PTR [rsp+8], rcx
@@ -1358,7 +1358,7 @@ $LN3:
 	push	rdi
 	sub	rsp, 232				; 000000e8H
 	lea	rbp, QWORD PTR [rsp+32]
-	lea	rcx, OFFSET FLAT:__C28EDDC9_for@cpp
+	lea	rcx, OFFSET FLAT:__91828629_for@cpp
 	call	__CheckForDebuggerJustMyCode
 	lea	rsp, QWORD PTR [rbp+200]
 	pop	rdi

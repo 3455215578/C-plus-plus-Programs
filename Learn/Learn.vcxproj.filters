@@ -22,6 +22,9 @@
     <Filter Include="源文件\指针和引用">
       <UniqueIdentifier>{15c41dfa-d9ea-4788-bf05-e2514ec7215b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\类和对象">
+      <UniqueIdentifier>{3d0a466f-b393-4cdc-9f3c-5a7f70dc64e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\变量.cpp">
@@ -41,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="Src\指针和引用\引用.cpp">
       <Filter>源文件\指针和引用</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\类和对象\类和对象.cpp">
+      <Filter>源文件\类和对象</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
