@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main01(void)
+int main(void)
 {
 	// char、short、int、long、long long
 	// float double

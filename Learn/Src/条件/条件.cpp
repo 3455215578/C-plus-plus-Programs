@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main02(void)
+int main(void)
 {
 
 	//const char* ptr = nullptr;

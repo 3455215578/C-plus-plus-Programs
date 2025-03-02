@@ -24,7 +24,7 @@ public:
 //}
 
 
-int main(void)
+int main07(void)
 {
 	Player player;
 

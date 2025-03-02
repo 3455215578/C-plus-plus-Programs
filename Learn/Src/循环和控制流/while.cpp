@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main04(void)
+int main(void)
 {
 
 	int i = 0;

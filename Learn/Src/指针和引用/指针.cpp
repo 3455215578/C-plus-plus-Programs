@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main05(void)
+int main(void)
 {
 	// stack
 	//int val = 8;

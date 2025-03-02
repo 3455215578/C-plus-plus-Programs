@@ -114,7 +114,7 @@ msvcjmc	ENDS
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
 PUBLIC	?Move@Player@@QEAAXHH@Z				; Player::Move
-PUBLIC	main
+PUBLIC	?main07@@YAHXZ					; main07
 PUBLIC	__JustMyCode_Default
 EXTRN	__imp_?get@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAHXZ:PROC
 EXTRN	_RTC_CheckStackVars:PROC
@@ -145,9 +145,9 @@ $pdata$?Move@Player@@QEAAXHH@Z DD imagerel $LN3
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$main DD	imagerel $LN3
+$pdata$?main07@@YAHXZ DD imagerel $LN3
 	DD	imagerel $LN3+141
-	DD	imagerel $unwind$main
+	DD	imagerel $unwind$?main07@@YAHXZ
 pdata	ENDS
 ;	COMDAT rtc$TMZ
 rtc$TMZ	SEGMENT
@@ -164,7 +164,7 @@ _volmd	DB	02aH
 voltbl	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$main DD	025053119H
+$unwind$?main07@@YAHXZ DD 025053119H
 	DD	010a230fH
 	DD	070030023H
 	DD	05002H
@@ -173,7 +173,7 @@ $unwind$main DD	025053119H
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
-main$rtcName$0 DB 070H
+?main07@@YAHXZ$rtcName$0 DB 070H			; main07
 	DB	06cH
 	DB	061H
 	DB	079H
@@ -181,13 +181,13 @@ main$rtcName$0 DB 070H
 	DB	072H
 	DB	00H
 	ORG $+9
-main$rtcVarDesc DD 028H
+?main07@@YAHXZ$rtcVarDesc DD 028H			; main07
 	DD	0cH
-	DQ	FLAT:main$rtcName$0
+	DQ	FLAT:?main07@@YAHXZ$rtcName$0
 	ORG $+48
-main$rtcFrameData DD 01H
+?main07@@YAHXZ$rtcFrameData DD 01H			; main07
 	DD	00H
-	DQ	FLAT:main$rtcVarDesc
+	DQ	FLAT:?main07@@YAHXZ$rtcVarDesc
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -218,11 +218,11 @@ __JustMyCode_Default PROC				; COMDAT
 __JustMyCode_Default ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT main
+;	COMDAT ?main07@@YAHXZ
 _TEXT	SEGMENT
 player$ = 8
 __$ArrayPad$ = 232
-main	PROC						; COMDAT
+?main07@@YAHXZ PROC					; main07, COMDAT
 ; File D:\GitHub\Code\C-plus-plus-Programs\Learn\Src\类和对象\类和对象.cpp
 ; Line 28
 $LN3:
@@ -252,7 +252,7 @@ $LN3:
 ; Line 36
 	mov	edi, eax
 	lea	rcx, QWORD PTR [rbp-32]
-	lea	rdx, OFFSET FLAT:main$rtcFrameData
+	lea	rdx, OFFSET FLAT:?main07@@YAHXZ$rtcFrameData
 	call	_RTC_CheckStackVars
 	mov	eax, edi
 	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
@@ -262,7 +262,7 @@ $LN3:
 	pop	rdi
 	pop	rbp
 	ret	0
-main	ENDP
+?main07@@YAHXZ ENDP					; main07
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ?Move@Player@@QEAAXHH@Z

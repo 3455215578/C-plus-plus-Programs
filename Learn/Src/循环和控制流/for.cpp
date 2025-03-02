@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main03(void)
+int main(void)
 {
 	// for循环包含三部分（初始化、条件和迭代） 条件部分为一个布尔语句,会返回true或false, true则继续循环
 

@@ -14,7 +14,7 @@ void Increment_Reference(int& value)
 	value++;
 }
 
-int main06(void)
+int main(void)
 {
 	int a = 5;
 
