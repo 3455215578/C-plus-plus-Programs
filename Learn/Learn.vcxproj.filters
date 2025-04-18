@@ -22,8 +22,17 @@
     <Filter Include="源文件\指针和引用">
       <UniqueIdentifier>{15c41dfa-d9ea-4788-bf05-e2514ec7215b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\类和对象">
+    <Filter Include="源文件\字符串">
+      <UniqueIdentifier>{3c2f9aa0-0223-4172-80b1-23f564b70617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\类">
       <UniqueIdentifier>{3d0a466f-b393-4cdc-9f3c-5a7f70dc64e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\类\虚函数">
+      <UniqueIdentifier>{ebb4bbc1-5576-4015-a69f-def16eef3c91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\类\构造与析构">
+      <UniqueIdentifier>{3d87696a-86f4-40ce-b7d0-1570076acabc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -45,25 +54,46 @@
     <ClCompile Include="Src\指针和引用\引用.cpp">
       <Filter>源文件\指针和引用</Filter>
     </ClCompile>
-    <ClCompile Include="Src\类和对象\类和对象.cpp">
-      <Filter>源文件\类和对象</Filter>
+    <ClCompile Include="Src\类\类.cpp">
+      <Filter>源文件\类</Filter>
     </ClCompile>
-    <ClCompile Include="Src\类和对象\Create a class.cpp">
-      <Filter>源文件\类和对象</Filter>
+    <ClCompile Include="Src\类\Create a class.cpp">
+      <Filter>源文件\类</Filter>
     </ClCompile>
     <ClCompile Include="Src\static.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Src\构造函数.cpp">
+    <ClCompile Include="Src\数组.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Src\析构函数.cpp">
+    <ClCompile Include="Src\const.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Src\继承.cpp">
+    <ClCompile Include="Src\类\虚函数\虚函数.cpp">
+      <Filter>源文件\类\虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\类\虚函数\纯虚函数.cpp">
+      <Filter>源文件\类\虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\类\继承.cpp">
+      <Filter>源文件\类</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\字符串\字符串常量.cpp">
+      <Filter>源文件\字符串</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\字符串\字符串.cpp">
+      <Filter>源文件\字符串</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\mutable.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Src\虚函数.cpp">
+    <ClCompile Include="Src\类\析构函数.cpp">
+      <Filter>源文件\类\构造与析构</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\类\构造函数.cpp">
+      <Filter>源文件\类\构造与析构</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\类\构造函数初始化列表.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
